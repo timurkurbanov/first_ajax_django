@@ -6,11 +6,11 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     const section3456 = document.getElementById('steps3456');
     const section7 = document.getElementById('step7');
-    
+    const section8 = document.getElementById('step8');
     
     const pingPongButton = document.getElementById('ping_pong');
     pingPongButton.addEventListener('click', function() {
-        request = axios.get('http://intro-ajax-api.herokuapp.com/pong')
+        request = axios.get('http://intro-ajax-api.herokuapp.com/ping')
         .then(function(resp) {
             console.log(resp.data);
             section3456.append(resp.data);
